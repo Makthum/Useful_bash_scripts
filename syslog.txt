@@ -1,0 +1,8 @@
+users logged in :
+mohamed  tty7         2013-05-12 20:18 (:0)
+mohamed  pts/0        2013-05-12 21:12 (:0)
+mohamed  pts/2        2013-05-12 20:19 (:0)
+currently logged in as 
+mohamed  pts/2        2013-05-12 20:19 (:0)
+ System uptime
+ 21:17:49 up  1:09,  3 users,  load average: 0.15, 0.30, 0.24
