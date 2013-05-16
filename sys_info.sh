@@ -25,7 +25,7 @@ case $selection in
 
 1) clear 
    echo -e "#########################################################################"
-   echo "                   Printing Display Resolution Information for this machine"
+   echo "                   Printing Users Logged in on this machine"
    echo    "#########################################################################"
    echo "  "
    echo "  " 
@@ -52,7 +52,7 @@ case $selection in
 
 3) clear 
    echo -e "#########################################################################"
-   echo "                   Printing User Information for this machine"
+   echo "                   Printing CPU Information for this machine"
    echo    "#########################################################################"
    echo "  "
    echo "  " 
@@ -64,11 +64,32 @@ case $selection in
    ;;
 4) clear 
    echo -e "#########################################################################"
-   echo "                   Printing User Information for this machine"
+   echo "                   Printing Display resolution Information for this machine"
    echo    "#########################################################################"
    echo "  "
    echo "  " 
    xrandr --current 
+      echo  -e  " \n#########################################################################"
+   echo  -e  "\n Press Any key to Continue to main menu ..........................."
+   read -n 1 key;;
+5) clear 
+   echo -e "#########################################################################"
+   echo "                   Printing Display resolution Information for this machine"
+   echo    "#########################################################################"
+   echo "  "
+   echo "  " 
+   echo -e "operating system name : `uname -o` "
+   echo    "machine type:`uname -m`" 
+      echo  -e  " \n#########################################################################"
+   echo  -e  "\n Press Any key to Continue to main menu ..........................."
+   read -n 1 key;;
+6) clear 
+   echo -e "#########################################################################"
+   echo "                   Printing Network Information for this machine"
+   echo    "#########################################################################"
+   echo "  "
+   echo "  " 
+   ifconfig 
       echo  -e  " \n#########################################################################"
    echo  -e  "\n Press Any key to Continue to main menu ..........................."
    read -n 1 key;;
