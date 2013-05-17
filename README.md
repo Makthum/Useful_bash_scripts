@@ -1,4 +1,4 @@
-Useful_bash_scripts
+Read Me
 -------------------
 
  This repository contains some useful scripts developed as practtice. Please let me know if you have any suggestion on the scripts
