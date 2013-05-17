@@ -5,7 +5,9 @@ Useful_bash_scripts
  
  
  Author
- ----------------
+---------
+
  Mohamed Makthum Mohamed Ikbal 
+ 
  Graduate Student  
  UBC
