@@ -1,5 +1,11 @@
 #!/bin/bash
 
+
+# Author 
+# Mohamed Makthum Mohamed Ikbal
+# This script find all the duplicate files in a specified directory based on the MD5 hashing 
+# This script prints all the duplicate files along with the path 
+
 clear
 echo "#####################################################################"
 echo "             Remove Duplicate File Tool                              "
