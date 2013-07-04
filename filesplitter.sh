@@ -5,19 +5,41 @@
 echo " #######################################################"
 echo " #######################################################"
 echo " #####           File Splitter #########################"
-
-selection= 8
-until [ $ selection -eq 3 ]; do 
+size=256M
+selection=8
+zero=0
+until [ $selection -eq "3" ]; do 
 clear 
 read selection
 case $selection in 
 1) echo " Compression Utility Selected "
+   
+   echo " Enter Minimum file size [ default 256M ] "
+   read size 
+   
+   
    echo "Enter File path from root"
    read path 
+  cd $path
    echo "Enter File Name"
    read filename
-   mkdir temp
-   cd temp 
+   mkdir tempqw
+   cd tempqw
+   
    gzip -c $path/$filename > compressed.gz
-   split -b 524288 compressed.gz
-   41
+   split -d -a 1 -b $size compressed.gz 0
+   temp_count=$(find . -type f -nowarn -maxdepth 1 \( ! -iname ".*" \) | wc -l)
+
+for ((i=0;i<$temp_count-1;i++))
+   do
+   mkdir $i
+   done    
+for ((i=0;i<$temp_count-1;i++)) 
+   do 
+   tempfilename="$zero$i"
+   mv $tempfilename $path/tempqw/$i/   
+   done
+;;
+*) echo " invalid selection"
+esac
+done
