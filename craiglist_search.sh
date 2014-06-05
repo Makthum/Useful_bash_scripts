@@ -1,9 +1,7 @@
 #!/bin/bash
 #Author - Mohamed Makthum Mohamed
-# This script is an effort to come up with a script to make craiglist search easy
-# Logic or idea is not my own and the credit goes to all souls out there on internet who orginially came 
-# up with this idea and provided insight on how to do it
-# This script is just a mere attempt to implement same idea on my own.
+# This script makes craiglist search easy
+# Logic or idea is not my own 
 # Date - 25/05/2013
 
 
